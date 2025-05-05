@@ -1,0 +1,31 @@
+1. Giải thích các câu lệnh
+
+    - git init: khởi tạo repo tại thư mục đc khởi tạo
+    - git add <file_name>: thêm 1 file đc chỉ định vào vùng staging
+    - git add .: thêm tất cả các file đã có thay đổi vào vùng staging
+    - git commit -m "message": đưa tất cả các file trong vùng staging vào vùng repo. 
+    Đồng thời tạo 1 commit với id riêng biệt và 1 message kèm theo
+
+2. Hãy tưởng tượng có 1 folder lesson-2 mới được tạo. Hãy liệt kê các file theo từng
+ vùng sau khi thao tác một loạt các lệnh sau:
+
+ a. Tạo 3 file: file1, file2, file3
+   - Cả 3 file sẽ nằm trong vùng Working Directory
+   - Chưa đc git quản lý vì chưa khởi tạo repo bằng git init
+
+ b. Chạy lệnh: git init
+    - Nếu chạy lệnh này trong folder lesson-2 thì repo sẽ đc khởi tạo trong folder này
+    - Cả 3 file trên sẽ vẫn nằm trong vùng đầu tiên, vùng Working Directory
+
+ c. Chạy lệnh: git commit-m”init project”
+    - Sẽ có error, vì trong vùng staging ko có gì
+    - Cả 3 file trên chưa đc add vào staging của git
+
+ d. Chạy lệnh: git add file1
+    - file1 sẽ đc add vào staging
+
+ e. Chạy lệnh: git commit-m”add file1”
+   - commit file1 vào vùng repo, commit này sẽ có 1 id riêng biệt với message "add file1"
+
+ f. Chạy lệnh: git add file
+   - lỗi, do git add sai tên
