@@ -1,0 +1,69 @@
+1. Giải thích
+
+    git commit --amend: cho phép sửa đổi commit gần nhất thông qua trình soạn thảo (VIM)
+    git commit --amend -m "message": tương tự lệnh trên nhưng có thể trực tiếp cung cấp message ko cần thông qua VIM
+    git restore --staged <file>: đưa 1 file cụ thể nào đó ở vùng Staging về lại wkdir mà ko làm mất các thay đổi
+    git reset HEAD~1: quay lại commit trước commit hiện tại, uncommit để đưa từ vùng repo về lại wkdir
+
+2.
+    c. 
+        - Vùng wkdir: file1, file2, file3
+        - Vùng Staging:
+        - Vùng repo: 
+
+        => báo lỗi do ko có gì trong vùng Staging để commit
+
+    d. 
+        - Vùng wkdir: file2, file3
+        - Vùng Staging: file1
+        - Vùng repo: 
+
+    e. 
+        - Vùng wkdir: file2, file3
+        - Vùng Staging: 
+        - Vùng repo: file1
+
+        + message cho commit "add file"
+
+    f. 
+        - Vùng wkdir: 
+        - Vùng Staging: file2, file3
+        - Vùng repo: file1
+
+    g. 
+        - Vùng wkdir: file2
+        - Vùng Staging: file3
+        - Vùng repo: file1
+
+    h. 
+        - Vùng wkdir: file2
+        - Vùng Staging: 
+        - Vùng repo: file1, file3
+
+        + message cho commit "add all files"
+
+    i. 
+        - Vùng wkdir: file2, file1
+        - Vùng Staging: 
+        - Vùng repo: file3
+
+3. 
+a. 
+    - Vùng wkdir:
+    - Vùng Staging:
+    - Vùng repo:
+
+b. 
+    - Vùng wkdir: file1.txt, file2.txt, oops/file3.txt
+    - Vùng Staging:
+    - Vùng repo:
+
+c + d
+    - Vùng wkdir: file1.txt, oops/file3.txt
+    - Vùng Staging: file2.txt
+    - Vùng repo:
+
+e.
+    - Vùng wkdir: file1.txt, oops/file3.txt
+    - Vùng Staging: 
+    - Vùng repo: file2.txt
