@@ -1,0 +1,14 @@
+1. Cấutrúc DOM cơ bản của một trang web bao gồm các thẻ gì?
+- Thẻ mở: <div>
+- Thẻ đóng: </div>
+- Thẻ tự đóng: <img/>
+
+
+2. Hãy môtả cấu trúc html của 1 bảng (table)
+- thead: phần đầu của table, chứa tên các cột của bảng
+    - tr: table row, chứa 1 dòng của bảng
+    - th: table head, chứa tên cột
+- tbody: phần thân chứa nội dung của bảng
+    - td: chứa nội dung của ô
+
+3. Push bài tập lên GitHub
