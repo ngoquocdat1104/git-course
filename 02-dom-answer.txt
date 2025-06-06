@@ -1,0 +1,11 @@
+a. Các phần tử con (child):
+<label for="email">Email:</label>
+<input type="email" id="email" name="email" required="">
+
+b. Các phần tử cha (parent):
+<form id="registrationForm">
+
+c. Các phần tử hậu duệ (descendant):
+<label for="email">Email:</label>
+<input type="email" id="email" name="email" required="">
+
